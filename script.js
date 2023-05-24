@@ -175,3 +175,7 @@ function closeBasket(){
     document.getElementById('closeBasket').classList.add('d-none');
     document.getElementById('closeBasket').classList.remove('d-flex');
 }
+
+
+
+/*********End **********/
