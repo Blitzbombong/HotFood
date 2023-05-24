@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotFood</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+</head>
+<script src="script.js"></script>
+<body onload="render()">
+    <header class="header">
+        <div class="header-child">
+            <div class="header-logo">
+                <img class="logo" src="img/logo.png" alt="">
+                <h1 class="invert-color">HotFood</h1>
+            </div>
+            <h3 class="street-name">Ostentor 1, Dortmund</h3>
+            <div class="header-logo">
+                <img class="menu-button" src="img/menu-button.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="main-child">
+            <img src="img/service-g4ea976375_1920.jpg" class="bg-img" alt="">
+            <div class="restaurant">
+                <div class="restaurant-about">
+                    <div class="like-star">
+                        <h3>Hot Bistro</h3>
+                        <span>Liferung ab 10 Euro!</span>
+                        <div class="rating">
+                            <img src="img/star-orange.png" alt="">
+                            <img src="img/star-orange.png" alt="">
+                            <img src="img/star-orange.png" alt="">
+                            <img src="img/star-orange.png" alt="">
+                            <img src="img/star-black.png" class="filter" alt=""><br>
+                            <span>(256 Bewertungen)</span>
+                        </div>
+                    </div>
+                    <div class="info-like-button">
+                        <img src="img/info-2-32.png" alt="">
+                        <img src="img/favorite-4-32.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="dishes" id="dishes">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="sticky">
+            <div class="basket-container" id="basket">
+                <h3 class="cash">Warenkorb</h3>
+                <div class="empty-basket" id="emptyBasket">
+                    <img src="img/einkaufswagen.png" alt="">
+                    <h3>Dein Warenkor ist leer!</h3>
+                    <span>Füge etwas deinem Warenkorb hinzu, um dir etwas kochen zu lassen.</span>
+                </div>
+                <div class="full-basket" id="fullBasket">
+                    
+                </div>
+                <div>
+                    <button class="finish-order">Bestellen</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="media-button">
+            <button onclick="openBasket()" class="basket-button">Wahrenkorb</button>
+        </div>
+        <img id="closeBasket" onclick="closeBasket()" class="close d-none" src="img/close.png" alt="">
+    </footer>
+</body>
+
+</html>
